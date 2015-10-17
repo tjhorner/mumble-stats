@@ -1,0 +1,28 @@
+{
+  "name": "mumble-stats",
+  "version": "1.0.0",
+  "description": "Gathers statistics from a Mumble server, such as how long users are on, what day it's most active and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjhorner/mumble-stats.git"
+  },
+  "keywords": [
+    "mumble"
+  ],
+  "author": "TJ Horner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjhorner/mumble-stats/issues"
+  },
+  "homepage": "https://github.com/tjhorner/mumble-stats#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.1.11",
+    "mumble": "^0.3.4",
+    "socket.io": "^1.3.7"
+  }
+}
