@@ -6,28 +6,48 @@
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://www.google.com/jsapi"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="section group">
-    	<div class="col span_1_of_3" id="users-online">
-        <h1>Users currently online</h1>
-        <ul></ul>
-    	</div>
+    <div id="content">
+      <h1 class="center">mumble.horner.tj stats</h1>
+      <div class="section group">
+      	<div class="col span_1_of_3" id="users-online">
+          <h2>Users currently online</h2>
+          <ul></ul>
+      	</div>
 
-    	<div class="col span_1_of_3" id="channels">
-        <h1>Most popular channels</h1>
-        <ul></ul>
-        <div id="channel_chart" class="chart"></div>
-    	</div>
+      	<div class="col span_1_of_3" id="channels">
+          <h2>Most popular channels</h2>
+          <ol></ol>
+      	</div>
 
-    	<div class="col span_1_of_3" id="user-times">
-        <h1>Top users</h1>
-        <ul></ul>
-        <div id="user_chart" class="chart"></div>
-    	</div>
+      	<div class="col span_1_of_3" id="user-times">
+          <h2>Most connected users</h2>
+          <ol></ol>
+      	</div>
+      </div>
+
+      <div class="section group">
+        <div class="col span_1_of_3" id="users-muted">
+          <h2>Most muted users</h2>
+          <ol></ol>
+        </div>
+
+        <div class="col span_1_of_3" id="users-deafened">
+          <h2>Most deafened users</h2>
+          <ol></ol>
+        </div>
+      </div>
+
+      <h1 class="mobile-hide">Pretty graphs</h1>
+      <div class="section group mobile-hide">
+      	<div class="col span_3_of_3">
+          <div id="channel_chart" class="chart"></div>
+      	</div>
+      </div>
     </div>
   </body>
 </html>

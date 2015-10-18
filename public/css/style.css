@@ -1,9 +1,29 @@
+#content{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 *, * *{
   font-family: Roboto, Arial, sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 h1{
-  margin: none;
+  margin-bottom: 0;
+}
+
+h2{
+  margin-top: 0;
+}
+
+.chart{
+  width: 98%;
+}
+
+.center{
+  text-align: center;
 }
 
 /*  SECTIONS  */
@@ -35,4 +55,5 @@ h1{
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  .mobile-hide{ display: none; }
 }
